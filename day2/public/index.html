@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrically Delish</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Lobster&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles/catalog.css">
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="wrap-content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <h1>Lyrically Delish</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto navbar-links">
+                        <li class="nav-item active navbar-text navbar-catalog">
+                            <a class="nav-link" href="#">Catalog<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active navbar-text navbar-admin">
+                            <a class="nav-link" href="admin.html">Admin<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 navbar-text">
+                        <input id="txtSearch" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button id="btnSearch" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+                    </form>
+                </div>
+            </nav>
+
+
+            <div class="my-container">
+                <div class="row">
+                    <div class="col-10">
+                        <div id="catalog-container" class="catalog">
+                        </div>
+                    </div>
+
+
+                    <div class="col-2">
+                        <ul id="categories" class="list-group" >
+                            <li class="list-group-item list-group-item-info goods"><h6>Goods</h6></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer" class="footer">
+            <div class="row-text">
+                <h5>Check us out on our social networks!</h5>
+            </div>  
+            
+            <div class="row-social">
+                <span class="class-link"><a href="http://instagram.com"><img class="social" src="/styles/iconfinder_12_5310124.svg" alt="instagram logo"></a></span>
+                <span class="class-link"><a href="http://facebook.com"><img class="social" src="/styles/iconfinder_1_5310113.svg" alt="facebook logo"></a></span>
+                <span class="class-link"><a href="http://tumblr.com"><img class="social" src="/styles/iconfinder_37_5310144 (1).svg" alt="tumblr logo"></a></span>
+                <span class="class-link"><a href="http://twitter.com"><img class="social" src="/styles/iconfinder_2_5310114.svg" alt="twitter logo"></a></span>
+                <span class="class-link"><a href="http://youtube.com"><img class="social" src="/styles/iconfinder_3_5310115.svg" alt="youtube logo"></a></span>
+            </div>
+
+            <div class="row-copyright">
+                <h5>All copyrights reserved 2020 &copy; Lrically Delish </h5>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="/scripts/catalog.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(223, 117, 161, 0.452);
+    color: white;
+    text-align: center;
+}
+
+h6{
+    margin: 0;
+}
+
+.social{
+    margin: 1rem;
+    width: 3rem;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 5rem;
+}
+
+.row-text{
+    text-align: center;
+}
+
+.row-social{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.row-copyright{
+    
+}
+

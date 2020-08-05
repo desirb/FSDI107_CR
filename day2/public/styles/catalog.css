@@ -1,0 +1,173 @@
+body{
+    position: relative;
+}
+
+body::after {
+    content: "";
+    background: url('https://www.sketchappsources.com/resources/source-image/bakery-icon-set.jpg');
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/* #page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#wrap-content {
+    padding-bottom: 2.5rem;
+}
+  
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+} */
+
+h1{
+    color: rgba(20, 20, 248, 0.671);
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+}
+
+.food-item{
+    width: 18rem;
+    height: 18rem;
+    border-radius: .2rem;
+    
+}
+
+.item{
+    display: inline-block;
+    margin: 1rem;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+    width: 18.6rem; 
+    background-color: white;
+    border-radius: .5rem;
+    border: .3rem solid rgb(164, 169, 233);
+}
+
+.code{
+    display: block;
+    margin: 0;  
+}
+
+.title{
+    display: block;
+    margin: 0;  
+}
+
+.price{
+    padding-right: 9rem;   
+}
+
+button{
+    text-align: right;
+}
+
+.info{
+    padding-left: 1rem;
+}
+
+button:hover{
+    background-color: rgb(169, 182, 241);
+}
+
+.nav-back{
+   background-color: blue;
+}
+
+.my-container{
+   margin-left: 5%;
+   margin-top: 3%;
+}
+
+.navbar-text{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5rem;
+}
+
+#txtSearch{
+    font-size: 1.5rem;
+}
+
+#btnSearch{
+    font-size: 1.5rem;
+}
+
+.navbar-links{
+    margin-left: 5rem;
+    padding: 0;
+}
+
+.navbar-catalog{
+    padding-right: 1rem;
+}
+
+.my-container{
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.7rem;
+}
+
+.goods{
+    background-color: rgba(196, 206, 247, 0.842);
+    text-align: center;
+}
+
+.list-group li:hover{
+    cursor: pointer;
+}
+
+.footer{
+    background-color: rgb(231, 135, 175);
+    margin-top: 10rem;
+    box-shadow: inset 0px 0px 10px rgb(34, 34, 34);
+}
+
+h6{
+    margin: 0;
+    font-size: 2rem;
+}
+
+.social{
+    width: 3rem;
+    border: solid 1px white;
+    background-color: white;
+    box-shadow: 2px 3px 10px black;
+    -moz-box-shadow: 2px 3px 10x  black;
+    -webkit-box-shadow: 2px 3px 10px  black;
+    -o-box-shadow: 2px 3px 10px black;
+    border-radius: 100px;
+    margin-left: 1.4rem;
+}
+
+h5{
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 1px 2px 3px black;
+}
+
+.row-text{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    padding: 1rem;
+}
+
+.row-social{
+    text-align: center;
+    padding: 1rem;
+}
+
+.row-copyright{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    padding: 1rem;
+}
+
