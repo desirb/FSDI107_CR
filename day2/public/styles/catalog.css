@@ -65,19 +65,23 @@ h1{
 }
 
 .price{
-    padding-right: 9rem;   
+    padding-right: 3rem;   
 }
 
-button{
-    text-align: right;
+.delete{
+    margin-left: 1rem;
+}
+
+.delete:hover{
+    background-color: rgb(241, 169, 169);
 }
 
 .info{
     padding-left: 1rem;
 }
 
-button:hover{
-    background-color: rgb(169, 182, 241);
+.add:hover{
+    background-color: rgb(169, 241, 173);
 }
 
 .nav-back{
@@ -126,7 +130,8 @@ button:hover{
 }
 
 .footer{
-    background-color: rgb(231, 135, 175);
+    background: rgb(241,195,210);
+    background: linear-gradient(171deg, rgba(241,195,210,1) 11%, rgba(233,118,151,1) 33%, rgba(223,107,138,1) 61%, rgba(237,191,196,1) 90%);
     margin-top: 10rem;
     box-shadow: inset 0px 0px 10px rgb(34, 34, 34);
 }

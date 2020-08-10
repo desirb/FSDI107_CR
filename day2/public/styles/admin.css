@@ -1,34 +1,61 @@
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(223, 117, 161, 0.452);
-    color: white;
-    text-align: center;
-}
-
-h6{
-    margin: 0;
-}
-
-.social{
-    margin: 1rem;
-    width: 3rem;
-    box-shadow: 1px 1px 5px grey;
-    border-radius: 5rem;
-}
-
-.row-text{
-    text-align: center;
-}
-
-.row-social{
-    margin: 0 auto;
-    width: 90%;
-}
-
-.row-copyright{
+body{
     
+    font-family: 'Amatic SC', cursive;;
 }
+
+.other-container{
+    text-align: center;
+}
+
+.my-container{
+    background-image: url(https://cdn.wallpapersafari.com/22/98/g9s7JI.png);
+    display: inline-block;
+    width: 80%;
+    margin-top: 5%;
+    border: 1px solid black;
+    -moz-box-shadow: 0 0 10px black;
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
+}
+
+h2{
+    font-size: 5rem;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+.row-header{
+    padding: 5rem;
+}
+
+.form{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnSave{
+    background-color: rgb(222, 233, 190);
+    color: black;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px rgb(154, 144, 179);
+}
+
+.centerBtnDiv{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerBtn{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-control{
+    font-size: 2rem;
+}
+
+
 

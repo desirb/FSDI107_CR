@@ -27,6 +27,9 @@ function Item(code, title, category, price, image){
 
 }
 
+function refreshPage(){
+    window.location.reload();
+} 
 
 function register(){
     var code = $("#txtCode").val();
@@ -38,6 +41,7 @@ function register(){
     var item = new Item (code, title, category, price, image);
     console.log(item);
     console.log(JSON.stringify(item));
+
 
     // create the AJAX request
 
@@ -58,9 +62,11 @@ function register(){
 
 
 
+
 function init(){
     //hook events
     $("#btnSave").click(register);
+    $("#btnSave").click(refreshPage);
 }
 
 window.onload = init;

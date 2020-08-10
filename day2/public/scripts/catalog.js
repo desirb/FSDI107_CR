@@ -3,7 +3,7 @@ var categories = [];
 
 function fetchData(){
     $.ajax({
-        url: 'http://restclass.azurewebsites.net/api/points',
+        url: 'http://localhost:8080/api/items/Brit',
         type: 'GET',
         success: function(allItems){
             //travel allItems
@@ -12,7 +12,7 @@ function fetchData(){
 
             for(let i = 0; i < allItems.length; i++){
                 var item = allItems[i];
-                if(item.user === "Brit"){
+                // if(item.user === "Brit"){
                     catalog.push(item);
 
                     
@@ -22,7 +22,7 @@ function fetchData(){
                     if(categories.indexOf(item.category) == -1){ //-1 means item is not in the array
                         categories.push(item.category);
                     }
-                }
+                // }
             }
             
             displayCatalog();
@@ -31,9 +31,9 @@ function fetchData(){
         error: function(errorDetails){
             console.error("Error fetching data.", errorDetails); //.error will cause text to appear in red, warn is yellow
         }
-
     });
 }
+
 
 function displayCategories() {
     //travel the categories array
@@ -70,6 +70,8 @@ function displayCatalog() {
         
     }
 
+    
+
 }
 
 function displayItem(item){
@@ -81,12 +83,15 @@ function displayItem(item){
                 <label class = "title">${item.title}</label>
                 <label class = "price">$${item.price}</label>
 
-                <button>Add</button>
+                <button class="add">Add</button>
+                <button class="delete" onclick="deleteItem('${item._id}')">Delete</button
             </div>
         </div>
         `;
         $("#catalog-container").append(syntax);
 }
+
+//  class="btn btn-danger btn-sm"
 
 function search(text){
    console.log(text);
@@ -109,6 +114,26 @@ function search(text){
     }
 }
 
+function deleteItem(id) {
+    $.ajax({
+        url: '/api/items',
+        type: 'DELETE',
+        data: JSON.stringify({ id: id }),
+        contentType:'application/json',
+        success: (res) => {
+            console.log("Item removed!")
+            console.log("Server says ", res);
+        },
+        error: (errDetails) => {
+            console.log("Could not be deleted");
+            console.log("Error", errDetails);
+        }
+    });
+}
+
+
+
+
 function init(){
     console.log("Catalog is working");
     //hook events
@@ -119,7 +144,7 @@ function init(){
 
     //get data
     fetchData();
-    // displayCatalog();
+    displayCatalog();
 }
 
 window.onload = init;
